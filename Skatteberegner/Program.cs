@@ -9,12 +9,9 @@
             double beskattes = 0.00;
             if(iAlt>1200)
             {
-                if(julegave<901){
-                    beskattes = andenGave;
-                }
-                else beskattes=iAlt;
+                if(julegave<901) return andenGave;
+                else return iAlt;
             }
-            else beskattes = 0.00;
-            return beskattes; 
+            else return beskattes; 
         }
     }
