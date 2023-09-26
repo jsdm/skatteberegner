@@ -5,6 +5,15 @@
         
         // Funktionen returnerer det beløb, der skal beskattes (altså ikke selve skatten).
         public double SkatVedJulegave(double julegave, double andenGave) {
-            return 0.1;
+            double iAlt = julegave + andenGave;
+            double beskattes = 0;
+            switch (iAlt)
+            {
+                case > 1200.00:
+                    beskattes = iAlt;
+                    break;
+                    
+            }
+            return beskattes;
         }
     }
