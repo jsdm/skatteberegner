@@ -9,7 +9,7 @@
             double beskattes = 0;
             if(iAlt>1200)
             {
-                if(julegave<900){
+                if(julegave<901){
                     beskattes = andenGave;
                 }
                 else beskattes=iAlt;
